@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#D9D9D9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#002855"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userGreeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Hi, David 👋"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Explore the FoT News"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="67dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#00253C"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user" />
+    </LinearLayout>
+
+    <!-- Section Title and Hamburger Menu -->
+    <RelativeLayout
+        android:id="@+id/sectionBar"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#CCCCCC">
+
+        <TextView
+            android:id="@+id/sectionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="SPORTS"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/menuButton"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_menu"
+            android:clickable="true"
+            android:focusable="true" />
+    </RelativeLayout>
+
+    <!-- Scrollable News Feed -->
+    <ScrollView
+        android:id="@+id/newsScroll"
+        android:layout_below="@id/sectionBar"
+        android:layout_above="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/newsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Card 1 -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/news1"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/news1Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UOC Enhances Cricket Opportunities with the Newly Constructed Turf Side Wickets"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:paddingBottom="16dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+
+            <!-- Card 2 -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/news2"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/news2Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Student Awards"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:paddingBottom="16dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Card 3 -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/news3"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/news3Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Students – Staff interaction through Sports and Culture"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:paddingBottom="16dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#002855"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iconSports"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_sports"
+            android:clickable="true"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:id="@+id/iconAcademic"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_academic"
+            android:clickable="true"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:id="@+id/iconEvents"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_events"
+            android:clickable="true"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

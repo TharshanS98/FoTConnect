@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FoTConnect</string>
+    <string name="user_info">USER INFO</string>
+    <string name="username_label">Username: Name_here</string>
+    <string name="email_label">Email: sample@email.com</string>
+    <string name="edit_info">Edit Info</string>
+    <string name="exit">Exit</string>
+    <string name="user_image">User Profile Image</string> <!-- ✅ Add this line -->
+</resources>

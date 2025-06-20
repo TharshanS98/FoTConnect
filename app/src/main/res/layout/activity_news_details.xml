@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ✅ Add this ImageView with correct ID -->
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/news1" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UOC Enhances Cricket Opportunities with the Newly Constructed Turf Side Wickets"
+            android:textSize="20sp"
+            android:textColor="#002855"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Content -->
+        <TextView
+            android:id="@+id/detailContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The newly constructed turf side wickets of the University of Colombo were declared on 26th May 2023, with the purpose of providing students the opportunity to enhance their cricket skills and foster a vibrant sporting culture within the university. This remarkable facility was made possible through the patronage of the Sri Lanka Cricket and Western Province Cricket Association, reflecting their commitment to promoting the growth of cricket at the university level.
+The opening ceremony was graced by the presence of the Vice Chancellor of the University, Senior Professor (Chair) H.D. Karunaratne, Chairman of the Sports Advisory Board, Dr Kapila Bandara, and Secretary of the Western Province Cricket Association, Mr Aruna Weerasinghe. Additionally, the Registrar of the University, Mr K.A.S. Edward, the Director of the Sports and Exercise Medicine Unit, Dr Chathuranga Ranasinghe, the Acting Director of the Department of Physical Education, Mr Sanjeewa Jayasinghe, as well as all the Physical Education instructors, members of the Amalgamated Club, and the members of the university cricket team were present at the event."
+            android:textSize="16sp"
+            android:textColor="#444444" />
+
+    </LinearLayout>
+</ScrollView>
